@@ -11,13 +11,13 @@
           <input id="name"
                  type="text"
                  class="form-control"
-                 formControlName="name"
+                 formControlName="nombre"
                  [ngClass]="{
-                 'is-invalid': registerForm.get('name')?.touched && registerForm.get('name')?.invalid,
-                 'is-valid': registerForm.get('name')?.touched && registerForm.get('name')?.valid
+                 'is-invalid': registerForm.get('nombre')?.touched && registerForm.get('nombre')?.invalid,
+                 'is-valid': registerForm.get('nombre')?.touched && registerForm.get('nombre')?.valid
           }">
           <p class="form-text opacity-75 mb-1">El nombre debe minimo 3 caracteres</p>
-          <div class="invalid-feedback" *ngIf="registerForm.get('name')?.touched && registerForm.get('name')?.invalid">
+          <div class="invalid-feedback" *ngIf="registerForm.get('nombre')?.touched && registerForm.get('nombre')?.invalid">
             El nombre es obligatorio
           </div>
         </div>
@@ -42,10 +42,10 @@
 
         <div class="mt-4">
           <div class="align-items-center justify-content-center text-center">
-            <label for="age" class="form-label opacity-75">Edad (opcional)</label>
-            <p class="display-5 fs-3">{{registerForm.get("age")?.value}}</p>
+            <label for="edad" class="form-label opacity-75">Edad (opcional)</label>
+            <p class="display-5 fs-3">{{registerForm.get("edad")?.value}}</p>
           </div>
-          <input id="age" type="range" class="form-range" min="18" max="100" formControlName="age">
+          <input id="edad" type="range" class="form-range" min="18" max="100" formControlName="edad">
         </div>
       </div>
 
