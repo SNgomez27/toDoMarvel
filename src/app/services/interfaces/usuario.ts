@@ -8,3 +8,7 @@ export interface NewUser{
   email: string;
   edad: number;
 }
+export interface  LoginUser{
+  username: string;
+  password: string;
+}
